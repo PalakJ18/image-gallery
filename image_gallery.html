@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image gallery</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            display: grid;
+            box-sizing: border-box;
+            width: 70%;
+            height: auto;
+            background-color: gainsboro;
+            gap: 1%;
+            grid-template-rows: repeat(5, 1fr);
+            grid-template-columns: repeat(3, 1fr);
+            margin-left: 15%;
+            justify-content: center;
+            overflow-x: hidden;
+            overflow-y: hidden;
+
+        }
+
+
+
+        .items {
+            padding: 5%;
+            position: relative;
+            box-sizing: border-box;
+            border-radius: 10%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* margin: 9%; */
+            margin: 0;
+        }
+
+
+        .items img {
+            position: relative;
+            border-radius: 10%;
+            filter: grayscale(100%);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+        }
+
+        figcaption {
+            position: absolute;
+            /* align-content: baseline; */
+            left: 0;
+            bottom: 0;
+            opacity: 0;
+            width: 90%;
+            height: 30%;
+            padding: 5%;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0)100%);
+            color: #fff;
+        }
+
+        .items:hover img {
+            filter: none;
+            transform: scale(1.05);
+            transition-delay: 10ms;
+            box-shadow: 5px 0 5px gray, 0 -5px 5px gray, 0 5px 5px gray, -5px 0 5px gray;
+        }
+
+
+        .items:hover figcaption {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>MY GALLERY</h1>
+    <div class="container">
+        <div>
+            <figure class="items"><img src="one.png">
+                <figcaption>Image 1</figcaption>
+            </figure>
+        </div>
+        <div>
+            <figure class="items"><img src="two.webp">
+                <figcaption>Image 2</figcaption>
+            </figure>
+        </div>
+        <div>
+            <figure class="items"><img src="three.webp">
+                <figcaption>Image 3</figcaption>
+            </figure>
+        </div>
+        <div>
+            <figure class="items"><img src="four.jpg">
+                <figcaption>Image 4</figcaption>
+            </figure>
+        </div>
+        <div>
+            <figure class="items"><img src="five.jpg">
+                <figcaption>Image 5</figcaption>
+            </figure>
+        </div>
+        <div>
+            <figure class="items"><img src="six.jpg">
+                <figcaption>Image 6</figcaption>
+            </figure>
+        </div>
+        <div>
+            <figure class="items"><img src="seven.png">
+                <figcaption>Image 7</figcaption>
+            </figure>
+        </div>
+        <div>
+            <figure class="items"><img src="eight.jpg">
+                <figcaption>Image 8</figcaption>
+            </figure>
+        </div>
+        <div>
+            <figure class="items"><img src="nine.png">
+                <figcaption>Image 9</figcaption>
+            </figure>
+        </div>
+        <div>
+            <figure class="items"><img src="ten.png">
+                <figcaption>Image 10</figcaption>
+            </figure>
+        </div>
+        <div>
+            <figure class="items"><img src="eleven.jpg">
+                <figcaption>Image 11</figcaption>
+            </figure>
+        </div>
+        <div>
+            <figure class="items"><img src="twelve.jpg">
+                <figcaption>Image 12</figcaption>
+            </figure>
+        </div>
+        <div>
+            <figure class="items"><img src="thirteen.jpg">
+                <figcaption>Image 13</figcaption>
+            </figure>
+        </div>
+        <div>
+            <figure class="items"><img src="fourteen.jpg">
+                <figcaption>Image 14</figcaption>
+            </figure>
+        </div>
+        <div>
+            <figure class="items"><img src="fifteen.jpg">
+                <figcaption>Image 15</figcaption>
+            </figure>
+        </div>
+
+    </div>
+</body>
+
+</html>
